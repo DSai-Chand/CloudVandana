@@ -8,14 +8,12 @@ public class Shuffle {
 
 	        for (int i = array.length - 1; i > 0; i--) {
 	            int j = random.nextInt(i + 1);
-	            
-	            // Swap array[i] and array[j]
+			
 	            int temp = array[i];
 	            array[i] = array[j];
 	            array[j] = temp;
 	        }
 
-	        // Print the shuffled array
 	        for (int value : array) {
 	            System.out.print(value + " ");
 	        }
